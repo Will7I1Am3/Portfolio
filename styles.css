@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+html {
+    /* For smooth scrolling */
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -11,6 +16,11 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh; /* At least a full page */
+
+    /* For transition */
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.5s ease, transform 0.5s ease;
 }
  
 /* Header and Footer Styling */
@@ -28,9 +38,11 @@ header {
 
 main {
     margin-top: 2rem;
+    margin-bottom: 1rem;
 }
 
 footer {
+    margin-top: 1rem;
     text-align: center;
     background-color: #333;
     color: white;
@@ -87,7 +99,7 @@ footer {
     font-size: 1.5rem;
     text-align: center;
     margin: 0;
-    padding:0;
+    padding: 0;
 }
 
 .projects {
@@ -99,16 +111,28 @@ footer {
   }
   
 .project-card {
-    min-width: 500px;
+    width: 500px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    padding: 15px;
+    padding: 2rem;
     text-align: center;
 }
   
 .project-card img {
     max-width: 100%;
     border-radius: 5px;
+    padding: 1rem;
+}
+
+.project-card h3 {
+    border-top: 1px solid #ccc;
+    padding-top: 1rem;
+}
+
+.project-card p {
+    max-width: 80%;
+    margin: auto;
+    padding-bottom: 2rem;
 }
 
 .learn-more {
