@@ -1,0 +1,152 @@
+/* General Styles */
+*{
+    font-family: "Times New Roman", Times, sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    /* For smooth scrolling */
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* At least a full page */
+
+    /* For transition */
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+ 
+/* Header and Footer Styling */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+}
+
+.content-wrapper {
+    flex: 1;
+}
+
+main {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+footer {
+    margin-top: 1rem;
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    align-content: center;
+}
+
+.footer-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.footer-list a {
+    color: white;
+}
+
+  
+.nav-list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 5rem;
+}
+
+.nav-list-item {
+    font-size: 1.3rem;
+    color: white;
+    text-decoration: none;
+}
+
+/* Title styling */
+.title {
+    text-align: center;
+    padding: 50px;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+}
+
+.title-text {
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+.title-description {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+/* Content */
+#project-header {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.projects {
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+.project-card {
+    width: 500px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 2rem;
+    text-align: center;
+}
+  
+.project-card img {
+    max-width: 100%;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+.project-card h3 {
+    border-top: 1px solid #ccc;
+    padding-top: 1rem;
+}
+
+.project-card p {
+    max-width: 80%;
+    margin: auto;
+    padding-bottom: 2rem;
+}
+
+.learn-more {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Media query for smaller screen */
+@media (max-width: 700px) {
+    .nav-list {
+        gap: 0;
+        justify-content: space-between;
+    }
+}
