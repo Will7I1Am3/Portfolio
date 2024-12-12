@@ -89,9 +89,9 @@ footer {
     font-size: 1.2rem;
 }
 
-/* Content */
+/* Landing Page Content Styling*/
 #project-header {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     text-align: center;
     margin: 0;
     padding: 0;
@@ -103,7 +103,7 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
     gap: 2rem;
-  }
+}
   
 .project-card {
     width: 500px;
@@ -123,13 +123,14 @@ footer {
 .project-card h2 {
     border-top: 1px solid #ccc;
     padding-top: 1rem;
+    font-size: 2rem;
 }
 
 .project-card p {
     max-width: 80%;
     margin: auto;
     padding-bottom: 2rem;
-    font-size: large;
+    font-size: 1.3rem;
 }
 
 .learn-more {
@@ -140,6 +141,59 @@ footer {
     border-radius: 5px;
 }
 
+/* Project-Detail Content Styling */
+.project-detail {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-wrapper {
+    width: 80%;
+    padding: 1rem;
+    text-align: center;
+}
+
+.project-wrapper h1 {
+    font-size: 3rem;
+}
+
+.project-wrapper img {
+    max-width: 100%;
+    max-height: fit-content;
+    padding: 1rem 0;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.project-wrapper video {
+    max-width: 100%;
+    max-height: fit-content;
+}
+
+.project-detail-text {
+    text-align: left;
+    padding: 1rem;
+}
+
+.project-detail-text h2{
+    font-size: 2rem;
+}
+
+.project-detail-text p{
+    font-size: 1.3rem;
+}
+
+.link-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+    padding-top: 1rem;
+}
+
+/* Bio Content Styling */
 .bio {
     padding: 1rem;
     display: flex;
@@ -164,15 +218,17 @@ footer {
 .bio-wrapper h2 {
     border-top: 1px solid #ccc;
     padding-top: 1rem;
+    font-size: 2rem;
 }
 
 .bio-wrapper p {
     max-width: 70%;
     margin: auto;
     padding-bottom: 2rem;
-    font-size: large;
+    font-size: 1.3rem;
 }
 
+/* Contact Content Styling */
 .contact {
     padding: 3rem;
     display: flex;
@@ -194,7 +250,7 @@ footer {
 
 .contact-table td {
     padding: 0.5rem 1rem;
-    font-size: larger;
+    font-size: 1.3rem;
 }
 
 .content-type {
@@ -207,7 +263,7 @@ footer {
 
 
 /* Media query for smaller screen */
-@media (max-width: 700px) {
+@media (max-width: 550px) {
     .nav-list {
         gap: 0;
         justify-content: space-between;
